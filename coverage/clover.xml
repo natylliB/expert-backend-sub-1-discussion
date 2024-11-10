@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731225892496" clover="3.2.0">
-  <project timestamp="1731225892496" name="All files">
-    <metrics statements="78" coveredstatements="77" conditionals="31" coveredconditionals="30" methods="16" coveredmethods="16" elements="125" coveredelements="123" complexity="0" loc="78" ncloc="78" packages="7" files="11" classes="11"/>
+<coverage generated="1731226477562" clover="3.2.0">
+  <project timestamp="1731226477562" name="All files">
+    <metrics statements="84" coveredstatements="83" conditionals="32" coveredconditionals="31" methods="18" coveredmethods="18" elements="134" coveredelements="132" complexity="0" loc="84" ncloc="84" packages="8" files="12" classes="12"/>
     <package name="Applications.security">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="PasswordHash.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Applications\security\PasswordHash.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
       </file>
     </package>
     <package name="Applications.use_case">
@@ -132,6 +132,18 @@
         <line num="34" count="2" type="stmt"/>
         <line num="36" count="2" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Infrastructures.security">
+      <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="BcryptPasswordHash.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Infrastructures\security\BcryptPasswordHash.js">
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
       </file>
     </package>
   </project>
