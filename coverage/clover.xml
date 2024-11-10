@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731225551208" clover="3.2.0">
-  <project timestamp="1731225551208" name="All files">
+<coverage generated="1731225892496" clover="3.2.0">
+  <project timestamp="1731225892496" name="All files">
     <metrics statements="78" coveredstatements="77" conditionals="31" coveredconditionals="30" methods="16" coveredmethods="16" elements="125" coveredelements="123" complexity="0" loc="78" ncloc="78" packages="7" files="11" classes="11"/>
     <package name="Applications.security">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -112,9 +112,9 @@
         <line num="23" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="Infrastructures.database.postgres">
+    <package name="Infrastructures.repository">
       <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <file name="UserRepositoryPostgres.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Infrastructures\database\postgres\UserRepositoryPostgres.js">
+      <file name="UserRepositoryPostgres.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Infrastructures\repository\UserRepositoryPostgres.js">
         <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

@@ -206,7 +206,7 @@ BRF:10
 BRH:10
 end_of_record
 TN:
-SF:src\Infrastructures\database\postgres\UserRepositoryPostgres.js
+SF:src\Infrastructures\repository\UserRepositoryPostgres.js
 FN:6,(anonymous_0)
 FN:12,(anonymous_1)
 FN:25,(anonymous_2)
