@@ -1,2 +1,4 @@
 node_modules
 submission_1_forum_api_expert_backend
+.env
+.test.env
