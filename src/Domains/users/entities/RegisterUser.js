@@ -10,7 +10,7 @@ class RegisterUser {
   }
 
   _validatePayload({ username, password, fullname }) {
-    if (typeof username === 'udnefined' || typeof password === 'undefined' || typeof fullname === 'undefined') {
+    if (typeof username === 'undefined' || typeof password === 'undefined' || typeof fullname === 'undefined') {
       throw new Error('REGISTER_USER.NOT_CONTAIN_REQUIRED_PROPERTY');
     }
 

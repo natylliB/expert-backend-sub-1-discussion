@@ -17,7 +17,7 @@ const UserRepository = require('../Domains/users/UserRepository');
 const PasswordHash = require('../Applications/security/PasswordHash');
 
 // creating container 
-const serviceContainer = createcontainer();
+const serviceContainer = createContainer();
 
 // registering services and repository
 serviceContainer.register([
@@ -54,7 +54,7 @@ serviceContainer.register([
     key: AddUserUseCase.name,
     Class: AddUserUseCase,
     parameter: {
-      injectType: 'desctructuring',
+      injectType: 'destructuring',
       dependencies: [
         {
           name: 'userRepository', 
