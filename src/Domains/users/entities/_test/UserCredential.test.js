@@ -18,4 +18,15 @@ describe('UserCredential({ username, hashedPassword }) object', () => {
     expect(() => new UserCredential(payload)).toThrow('USER_CREDENTIAL.PROPERTY_NOT_MET_DATA_TYPE_SPECIFICATION');
   });
 
+  it('should create user credential object correctly', () => {
+    const payload = {
+      username: 'billy',
+      hashedPassword: 'some_hashed_password',
+    };
+
+    const { username, hashedPassword } = new UserCredential(payload);
+
+    expect(username).toEqual(payload.username);
+    expect(hashedPassword).toEqual(payload.hashedPassword);
+  })
 });

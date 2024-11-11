@@ -1,6 +1,11 @@
 class UserCredential {
   constructor(payload) {
     this._verifyPayload(payload);
+
+    const { username, hashedPassword } = payload;
+
+    this.username = username;
+    this.hashedPassword = hashedPassword;
   }
   _verifyPayload({ username, hashedPassword }) {
     if (typeof username === 'undefined' || typeof hashedPassword === 'undefined') {
