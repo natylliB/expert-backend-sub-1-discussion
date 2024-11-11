@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731332930847" clover="3.2.0">
-  <project timestamp="1731332930847" name="All files">
-    <metrics statements="152" coveredstatements="151" conditionals="64" coveredconditionals="60" methods="31" coveredmethods="31" elements="247" coveredelements="242" complexity="0" loc="152" ncloc="152" packages="10" files="19" classes="19"/>
+<coverage generated="1731335114155" clover="3.2.0">
+  <project timestamp="1731335114155" name="All files">
+    <metrics statements="161" coveredstatements="160" conditionals="64" coveredconditionals="61" methods="35" coveredmethods="35" elements="260" coveredelements="256" complexity="0" loc="161" ncloc="161" packages="12" files="21" classes="21"/>
     <package name="Applications.security">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="PasswordHash.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Applications\security\PasswordHash.js">
@@ -9,6 +9,16 @@
         <line num="3" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="Applications.tokenize">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="AuthenticationTokenManager.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Applications\tokenize\AuthenticationTokenManager.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Applications.use_case">
@@ -79,6 +89,14 @@
         <line num="11" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="Domains.authentications">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="AuthenticationRepository.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Domains\authentications\AuthenticationRepository.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="Domains.users">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="UserRepository.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Domains\users\UserRepository.js">
@@ -90,7 +108,7 @@
       </file>
     </package>
     <package name="Domains.users.entities">
-      <metrics statements="43" coveredstatements="43" conditionals="44" coveredconditionals="43" methods="8" coveredmethods="8"/>
+      <metrics statements="46" coveredstatements="46" conditionals="44" coveredconditionals="44" methods="8" coveredmethods="8"/>
       <file name="LoginCredential.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Domains\users\entities\LoginCredential.js">
         <metrics statements="13" coveredstatements="13" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
         <line num="3" count="5" type="stmt"/>
@@ -138,13 +156,16 @@
         <line num="23" count="4" type="stmt"/>
       </file>
       <file name="UserCredential.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Domains\users\entities\UserCredential.js">
-        <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="6" count="2" type="cond" truecount="4" falsecount="0"/>
+        <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="4" falsecount="0"/>
         <line num="15" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Infrastructures.http">
