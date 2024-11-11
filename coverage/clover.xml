@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731237723277" clover="3.2.0">
-  <project timestamp="1731237723277" name="All files">
-    <metrics statements="131" coveredstatements="130" conditionals="44" coveredconditionals="41" methods="25" coveredmethods="25" elements="200" coveredelements="196" complexity="0" loc="131" ncloc="131" packages="10" files="17" classes="17"/>
+<coverage generated="1731329776087" clover="3.2.0">
+  <project timestamp="1731329776087" name="All files">
+    <metrics statements="144" coveredstatements="143" conditionals="56" coveredconditionals="53" methods="27" coveredmethods="27" elements="227" coveredelements="223" complexity="0" loc="144" ncloc="144" packages="10" files="18" classes="18"/>
     <package name="Applications.security">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="PasswordHash.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Applications\security\PasswordHash.js">
@@ -88,7 +88,7 @@
       </file>
     </package>
     <package name="Domains.users.entities">
-      <metrics statements="24" coveredstatements="24" conditionals="24" coveredconditionals="24" methods="4" coveredmethods="4"/>
+      <metrics statements="37" coveredstatements="37" conditionals="36" coveredconditionals="36" methods="6" coveredmethods="6"/>
       <file name="RegisterUser.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Domains\users\entities\RegisterUser.js">
         <metrics statements="14" coveredstatements="14" conditionals="14" coveredconditionals="14" methods="2" coveredmethods="2"/>
         <line num="3" count="15" type="stmt"/>
@@ -118,6 +118,22 @@
         <line num="17" count="8" type="cond" truecount="5" falsecount="0"/>
         <line num="18" count="1" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
+      </file>
+      <file name="UserCredential.js" path="H:\Billy\Programming Projects\backend-experts\forum-api\src\Domains\users\entities\UserCredential.js">
+        <metrics statements="13" coveredstatements="13" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Infrastructures.http">
