@@ -1,8 +1,9 @@
 const UserCredential = require('../UserCredential');
 
-describe('UserCredential({ username, hashedPassword }) object', () => {
+describe('UserCredential({ id, username, hashedPassword }) object', () => {
   it('should throw error when not contain required property', () => {
     const payload = {
+      id: 'user-123',
       username: 'billy',
     };
 
@@ -11,6 +12,7 @@ describe('UserCredential({ username, hashedPassword }) object', () => {
 
   it('should throw error when property not met data type specification', () => {
     const payload = {
+      id: 'user-123',
       username: 'billy',
       hashedPassword: 123,
     };
@@ -20,12 +22,14 @@ describe('UserCredential({ username, hashedPassword }) object', () => {
 
   it('should create user credential object correctly', () => {
     const payload = {
+      id: 'user-123',
       username: 'billy',
       hashedPassword: 'some_hashed_password',
     };
 
-    const { username, hashedPassword } = new UserCredential(payload);
+    const { id, username, hashedPassword } = new UserCredential(payload);
 
+    expect(id).toEqual(payload.id);
     expect(username).toEqual(payload.username);
     expect(hashedPassword).toEqual(payload.hashedPassword);
   })
