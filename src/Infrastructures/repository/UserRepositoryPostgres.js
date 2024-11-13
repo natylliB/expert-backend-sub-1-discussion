@@ -1,6 +1,7 @@
 const InvariantError = require('../../Commons/Exeptions/InvariantError');
 const UserRepository = require('../../Domains/users/UserRepository');
 const RegisteredUser = require('../../Domains/users/entities/RegisteredUser');
+const UserCredential = require('../../Domains/users/entities/UserCredential');
 
 class UserRepositoryPostgres extends UserRepository {
   constructor(pool, idGenerator) {
@@ -34,6 +35,27 @@ class UserRepositoryPostgres extends UserRepository {
     const result = await this._pool.query(query);
 
     return new RegisteredUser({ ...result.rows[0] });
+  }
+
+  async getUserCredential(username) {
+    const query = {
+      text: 'SELECT id, username, password FROM users WHERE username = $1',
+      values: [username],
+    };
+
+    const result = await this._pool.query(query);
+
+    if (result.rows.length === 0) {
+      throw new InvariantError('Username tidak terdaftar');
+    }
+
+    const userCredential = new UserCredential({
+      id: result.rows[0].id,
+      username: result.rows[0].username,
+      hashedPassword: result.rows[0].password,
+    });
+
+    return userCredential;
   }
 }
 

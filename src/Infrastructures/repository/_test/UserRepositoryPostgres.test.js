@@ -4,6 +4,7 @@ const InvariantError = require('../../../Commons/Exeptions/InvariantError');
 const pool = require('../../database/postgres/pool');
 const RegisterUser = require('../../../Domains/users/entities/RegisterUser');
 const RegisteredUser = require('../../../Domains/users/entities/RegisteredUser');
+const UserCredential = require('../../../Domains/users/entities/UserCredential');
 
 describe('UserRepositoryPostgres', () => {
   afterEach(async () => {
@@ -70,5 +71,30 @@ describe('UserRepositoryPostgres', () => {
         fullname: 'Billy Tan',
       }));
     });
+  });
+
+  describe('getUserCredential function', () => {
+    it('should throw Inaviant Error when user is not found', async () => {
+      // Arrange
+      const username = 'billy';
+      const userRepositoryPostgres = new UserRepositoryPostgres(pool, {});
+
+      // Action & Assert
+      await expect(userRepositoryPostgres.getUserCredential(username)).rejects.toThrow(new InvariantError('Username tidak terdaftar'));
+    });
+
+    it('should return UserCredential object correctly', async () => {
+      // Arrange
+      await UserTableTestHelper.addUser({ id: 'user-123', username: 'billy', password: 'hashed_password' });
+      const userRepositoryPostgres = new UserRepositoryPostgres(pool, {});
+
+      // Action
+      const { id, username, hashedPassword } = await userRepositoryPostgres.getUserCredential('billy');
+
+      // Assert
+      expect(id).toEqual('user-123');
+      expect(username).toEqual('billy');
+      expect(hashedPassword).toEqual('hashed_password');
+    })
   });
 });
