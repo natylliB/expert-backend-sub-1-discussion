@@ -3,7 +3,7 @@ const AuthenticationsTableTestHelper = require('../../../../tests/Authentication
 const pool = require('../../database/postgres/pool');
 
 describe('AuthenticationRepositoryPostgres', () => {
-  beforeEach(async () => {
+  afterEach(async () => {
     await AuthenticationsTableTestHelper.cleanTable();
   });
 
